@@ -14,7 +14,7 @@ export const routes: Routes = [
                 component: HomeComponent
             },
             {
-                path:'Prendas/:id',
+                path:'Prendas',
                 component: ListProductComponent
             }
         ]

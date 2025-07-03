@@ -16,7 +16,7 @@ import { RouterLink } from '@angular/router';
       <img [src]="producto.images" [alt]="producto.title" />
       <h3>{{ producto.title }}</h3>
       <p>{{ producto.price| currency:'COP':'symbol' }}</p>
-      <button ><a routerLink="/Prendas/:id" class="A">Ver más</a></button>
+      <button ><a routerLink="/Prendas" class="A">Ver más</a></button>
     </div>
   </div>
 </section>

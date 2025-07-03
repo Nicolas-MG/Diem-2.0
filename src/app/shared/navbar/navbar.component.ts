@@ -16,7 +16,7 @@ import { CartService } from '../../services/cart.service';
                   <a routerLink="/">DIEM</a>
                 </div>
                 <ul class="nav-links">
-                  <li><a routerLink="/Prendas/:id">Tienda</a></li>
+                  <li><a routerLink="/Prendas">Tienda</a></li>
                   <li>
                     <div class="cart-icon-wrapper">
                       <button (click)="cart.toggleSidebar()">
