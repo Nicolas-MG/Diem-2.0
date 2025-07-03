@@ -1,0 +1,31 @@
+.mensaje-exito {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  z-index: 9999;
+  animation: slideInFade 2s ease-in-out;
+}
+
+@keyframes slideInFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) translateX(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px) translateX(20px);
+  }
+}

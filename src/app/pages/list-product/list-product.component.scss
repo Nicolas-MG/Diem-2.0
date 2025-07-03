@@ -1,0 +1,64 @@
+$primary-color: #ff4d4d;
+$bg-color: #111;
+$text-color: #fff;
+$secondary-color: #222;
+$glass-bg: rgba(255, 255, 255, 0.05);
+
+:host {
+  display: block;
+  padding: 2rem;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.contenedor-listado {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.categorias-nav {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 999px;
+        background-color: $secondary-color;
+        color: $text-color;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: 500;
+        transition: all 0.3s ease;
+
+        &:hover {
+          opacity: 0.85;
+        }
+
+        &.activo {
+          background-color: $primary-color;
+          border-color: $primary-color;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
+
+.lista-de-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+}
