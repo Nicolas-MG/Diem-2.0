@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
                 <div class="hero__overlay">
                   <div class="hero__content">
                     <p class="hero__subtitle">Sientete bien, Viste bien, Vive Diem 🦍🔥</p>
-                    <button class="hero__btn" routerLink="Prendas/:id">Ver colección</button>
+                    <button class="hero__btn" routerLink="Prendas">Ver colección</button>
                   </div>
                 </div>
               </section>
